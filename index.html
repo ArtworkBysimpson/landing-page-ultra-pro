@@ -276,6 +276,73 @@
             margin: 5px 0;
         }
 
+        /* --- Seção 7: Suporte e Contato --- */
+        .support-section {
+            background-color: var(--color-dark-bg); /* Fundo um pouco diferente */
+            border-top: 1px solid #333;
+        }
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .contact-block {
+            flex-basis: 400px; /* Largura base de cada bloco */
+            text-align: center;
+            background-color: var(--color-light-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            border: 1px solid #333;
+        }
+        .contact-block h4 {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .contact-block p {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        .contact-link {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-link:hover {
+            color: var(--color-primary);
+        }
+        .social-links {
+            text-align: center;
+        }
+        .social-links h4 {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 20px;
+        }
+        .social-icon {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-text);
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 8px 15px;
+            border: 2px solid #555;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            transform: translateY(-2px);
+        }
+
+        /* --- Estilo da Nota de Entrega (que você adicionou antes) --- */
+
         /* --- Responsividade (Mobile) --- */
         @media (max-width: 768px) {
             .hero h2 {
@@ -300,6 +367,36 @@
             }
         }
 
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            /* ... (outros estilos mobile aqui) ... */
+
+            /* ADICIONE ESSAS NOVAS LINHAS AQUI DENTRO */
+            .contact-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .social-links {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .social-icon {
+                margin: 0; /* Remove a margem lateral no mobile */
+            }
+        }
+        /* --- Estilo da Nota de Entrega --- */
+        .delivery-info {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        /* --- Responsividade (Mobile) --- */
+
     </style>
 </head>
 <body>
@@ -312,7 +409,7 @@
 
                 <div class="cta-buttons-wrapper">
                     <a href="https://github.com/ArtworkBysimpson/dtg-dtf-ultra-pro-installer/releases/download/v1.0.0-trial/DTG.DTF_ULTRA_PRO_EN_GB_01.zip" class="cta-button cta-button-primary">Download 7-Day Free Trial</a>
-                    <a href="https://buy.stripe.com/cNiaEXeNr6HA6jbgjNcQU01" class="cta-button cta-button-secondary">Get Your Lifetime License</a>
+                    <a href="https://buy.stripe.com/dRm00jfRvc1UbDvd7BcQU02" class="cta-button cta-button-secondary">Get Your Lifetime License</a>
                 </div>
                 <p class="disclaimer">Available for Windows • Full access for 7 days, no credit card required.</p>
                 
@@ -335,7 +432,7 @@
                 <h2 class="section-title">Ready to Unlock Your Full Potential?</h2>
                 <div class="price-box">
                     <h3>DTG & DTF Ultra Pro</h3>
-                    <div class="price">$79</div> <div class="license-type">Lifetime License</div>
+                    <div class="price"></div> <div class="license-type">Lifetime License</div>
                     
                     <ul>
                         <li>One-time payment, no subscriptions</li>
@@ -343,7 +440,10 @@
                         <li>Premium customer support</li>
                     </ul>
                     
-                    <a href="https://buy.stripe.com/cNiaEXeNr6HA6jbgjNcQU01" class="cta-button cta-button-buy">Buy Now & Get Instant Access</a>
+                    <a href="https://buy.stripe.com/dRm00jfRvc1UbDvd7BcQU02" class="cta-button cta-button-buy">Buy Now & Get Instant Access</a>
+                    <div class="delivery-info">
+    <b>License Delivery:</b> After payment, your key will be sent to your purchase email. Please allow up to 20 minutes and check your spam folder.
+</div>
                 </div>
             </div>
         </section>
@@ -402,7 +502,34 @@
             </div>
         </section>
     </main>
+<section class="section support-section">
+            <div class="container">
+                <h3 class="section-title">Need Help or Have Questions?</h3>
+                <p class="section-subtitle">We're here to help you succeed.</p>
 
+                <div class="contact-wrapper">
+                    <div class="contact-block">
+                        <h4>Support</h4>
+                        <p>Questions or technical issues? Email us directly:</p>
+                        <a href="mailto:dtfapplications@gmail.com" class="contact-link">dtfapplications@gmail.com</a>
+                    </div>
+                    <div class="contact-block">
+                        <h4>WhatsApp (Brazil)</h4>
+                        <p>For quick questions, chat with us:</p>
+                        <a href="https://wa.me/5512974063588" target="_blank" class="contact-link">+55 12 97406-3588</a>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h4>Join Our Community:</h4>
+                    <a href="https://www.youtube.com/@DTFandDTGPrintingandArts" target="_blank" class="social-icon">YouTube</a>
+                    <a href="https://www.instagram.com/DOT.FORGE" target="_blank" class="social-icon">Instagram</a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="main-footer">
     <footer class="main-footer">
         <div class="container">
             <p>&copy; 2025 DTG & DTF Ultra Pro. Developed by Fernando Bysimpson.</p>
@@ -412,4 +539,3 @@
     
 </body>
 </html>
-
